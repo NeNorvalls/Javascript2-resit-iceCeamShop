@@ -1,8 +1,8 @@
-import { iceCreams } from "../data/ice-creams.js";
+import { default as iceArray } from "../data/ice-creams.js";
 
 const iceCreamContainer = document.querySelector(".ice-creams");
 
-export const displayIceCream = iceCreams.map((iceCream, index) => {
+export const displayIceCream = iceArray.map((iceCream, index) => {
   return (`
     
     <div class="col-lg-4 col-md-6 col-sm-12 card" style="background-color: ${iceCream.colour};">
@@ -17,6 +17,5 @@ export const displayIceCream = iceCreams.map((iceCream, index) => {
             </div>
     </div>`);
 });
-console.log(iceCreams);
+console.log(iceArray);
 iceCreamContainer.innerHTML = displayIceCream.join("");
-

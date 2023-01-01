@@ -1,4 +1,4 @@
-export const iceCreams = [
+export default [
   {
     id: 1,
     name: "Ice cream 1",
