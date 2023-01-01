@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nice Cream</title>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link href="/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- =================== NAVIGATION ==================== -->
+      <nav>
+        <a href="/index.html" class="active">Home</a>
+        <a href="cart.html" class="active cart">
+          <ion-icon name="basket"></ion-icon>Cart<span class="cart-number">0</span>
+        </a>
+      </nav>
+    
+      <h1 class="animate-character">Nice Cream</h1>
+
+      <div class="ice-creams row">
+        <!-- render products -->
+      </div> 
+    </div>
+    <script defer type="module" src="/js/index.mjs"></script>
+    <script defer type="module" src="./js/components/cart.mjs"></script>
+  </body>
+</html>

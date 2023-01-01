@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart | Nice Cream</title>
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link href="css/style.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <div class="container-fluid">
+        <nav>
+          <a href="/index.html">Home</a>
+          <a href="cart.html" class="active cart">
+            <ion-icon name="basket"></ion-icon>Cart<span class="cart-number">0</span>
+          </a>
+        </nav>
+        <h1 class="animate-character ">Shopping cart</h1>
+
+        <div id="cart" class="products-container">
+          <div class="product-header">
+            <h5 class="product-title">PRODUCT</h5>
+            <h5 class="price-cart">PRICE</h5>
+          </div>
+          <div class="products">
+
+          </div>
+        </div>
+    </div>
+
+    <script defer type="module" src="./js/components/cart.mjs"></script>
+    <script defer type="module" src="./js/components/removeFromCart.mjs"></script>
+  </body>
+</html>
+
