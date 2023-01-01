@@ -3,12 +3,6 @@
 * {
   box-sizing: border-box;
 }
-
-html,
-body {
-  margin: 0px;
-}
-
 body {
   font-family: "Open Sans";
   background-image: url("/images/AdobeStock_437219552_Preview.jpeg");
@@ -16,7 +10,6 @@ body {
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
-
 }
 
 h1,
@@ -34,6 +27,7 @@ nav a {
   margin-top: 1rem;
   display: inline-flex;
   justify-content: space-between;
+  align-items: center;
   text-transform: uppercase;
   height: 100%;
   text-decoration: none;
@@ -49,7 +43,7 @@ nav a.active {
   margin-left: 1rem;
 }
 
-/* ===================== CART ==================== */
+/* cart */
 .cart ion-icon {
   vertical-align: bottom;
   font-size: 20px;
@@ -65,7 +59,7 @@ a.cart {
   padding: 4px;
 }
 
-/* ========================== CARD ======================== */
+/* =========== CARD ======================== */
 .container-fluid {
   width: 75vw;
   margin: 0 auto;
@@ -76,6 +70,7 @@ a.cart {
 	display: grid;
 	grid-gap: 20px;
 	grid-template-columns: repeat(auto-fit, 350px);
+	justify-content: center;
 } 
 
 .col-lg-4,
@@ -99,6 +94,8 @@ a.cart {
   background: #ebebeb;
   width: 75px;
   height: 75px;
+  align-items: center;
+  justify-content: center;
 }
 
 .price-container {
@@ -133,8 +130,7 @@ a.cart {
   }
 }
 
-
-/* ======================= CART PAGE ======================== */
+/* CART PAGE */
 .products-container {
   max-width: 550px;
   margin: 0 auto;
@@ -172,6 +168,7 @@ a.cart {
 .price-cart {
   width: 30%;
   display: flex;
+  align-items: center;
 }
 
 .products {
@@ -185,6 +182,7 @@ a.cart {
   margin-right: 5rem;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 10px 0;
   border-bottom: 1px solid lightgray;
 }
@@ -208,7 +206,6 @@ a.cart {
   width: 10%;
 }
 
-/* =================== CART BUTTON ========================== */
 /* =================== CART BUTTON ========================== */
 .cart-button {
   position: absolute;
@@ -246,7 +243,7 @@ a.cart {
 }
 
 
-/* ==================  USING SAME PROPERTY/VALUE ====================== */
+/* ================== USING SAME Property VALUE ====================== */
 .animate-character,
 nav a.active,
 .card-title,
@@ -281,17 +278,4 @@ nav a {
 .shopping-bag,
 .price {
   display: flex;
-}
-
-.ice-creams,
-.price,
-.price-cart,
-.product,
-nav a {
-  align-items: center;
-}
-
-.ice-creams,
-.price {
-  justify-content: center;
 }
