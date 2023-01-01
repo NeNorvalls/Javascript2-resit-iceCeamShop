@@ -9,15 +9,28 @@ for (let i=0; i < cartButtons.length; i++) {
   cartButtons[i].addEventListener("click", () => {
     cartNumbers(products[i]);
     totalCost(products[i]);
+
   })
 
   //  change buttons on click
+  // cartButtons.forEach(function (cartButton) {
+  //     cartButton.onclick = function (event) {
+  //       this.classList.toggle("added");
 
-  cartButtons.forEach(function (cartButton) {
-    cartButton.onclick = function (event) {
-      cartButton.classList.add("added");
-    }
-  })
+  //   }
+  // })
+
+}
+const addButtons = document.querySelectorAll(".cart-button");
+
+addButtons.forEach((addButton) => {
+  addButton.addEventListener("click", handleClick);
+})
+
+function handleClick() {
+  this.classList.toggle("added");
+  this.classList.toggle("add");
+  this.classList.toggle("remove")
 }
  // display number of items in cart 
 function onLoadCartNumbers() {
